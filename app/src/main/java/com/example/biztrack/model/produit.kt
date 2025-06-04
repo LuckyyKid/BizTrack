@@ -3,6 +3,9 @@ package com.example.biztrack.modele
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+class produit{
+
+
 @Entity(tableName = "produit")
 data class Produit(
     @PrimaryKey(autoGenerate = true)
@@ -11,3 +14,5 @@ data class Produit(
     val prix: Double,
     val categorie: String
 )
+}
+
