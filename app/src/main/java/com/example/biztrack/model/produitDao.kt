@@ -23,6 +23,9 @@ interface produitDao {
     @Query("SELECT * FROM produit ORDER BY id ASC")
     fun getAllProduits(): LiveData<List<produit.Produit>>
 
+
+
     @Query("SELECT * FROM produit WHERE id = :id")
     fun getProduitById(id: Int): LiveData<produit.Produit>
+
 }
