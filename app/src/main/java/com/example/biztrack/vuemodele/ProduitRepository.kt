@@ -21,9 +21,9 @@ class ProduitRepository(private val produitDao: produitDao) {
             produitDao.deleteProduit(produit)
         }
 
-        suspend fun findProduit(id:Int){
-            produitDao.getProduitById(id)
-        }
+    fun findProduit(id: Int): LiveData<produit.Produit> {
+        return produitDao.getProduitById(id)
+    }
 
     }
 
