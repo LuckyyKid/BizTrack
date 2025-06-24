@@ -1,4 +1,4 @@
-package com.example.biztrack
+package com.example.biztrack.vue
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
